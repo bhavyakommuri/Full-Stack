@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhavya Venkata Krishna Kumari Kommuri | Portfolio</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+  body{background:#f8f9ff;color:#333}
+  header{background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);color:white;text-align:center;padding:90px 20px}
+  header h1{font-size:42px}
+  header h1 span{color:#00ffcc}
+  header p{margin:15px 0;font-size:18px;opacity:0.9}
+  .btn{background:#00ffcc;color:#111;padding:12px 25px;text-decoration:none;border-radius:25px;font-weight:bold;display:inline-block;margin-top:10px}
+  section{padding:50px 20px;max-width:1000px;margin:auto}
+  h2{text-align:center;margin-bottom:30px;font-size:32px;color:#302b63}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+  .card{background:white;padding:25px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.08);transition:0.3s}
+  .card:hover{transform:translateY(-5px)}
+  .tag{display:inline-block;background:#eef2ff;color:#302b63;padding:5px 10px;border-radius:20px;font-size:12px;margin:3px}
+  .footer{background:#111;color:#aaa;text-align:center;padding:20px;margin-top:40px}
+  form{max-width:450px;margin:auto;display:flex;flex-direction:column;gap:12px}
+  input,textarea{padding:13px;border:1px solid #ddd;border-radius:8px}
+  form button{background:#302b63;color:white;padding:13px;border:none;border-radius:8px;cursor:pointer;font-size:16px}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Hi, I'm <span>Bhavya Venkata Krishna Kumari Kommuri</span></h1>
+  <p>B.Tech 4th Year - CSE (AI & ML) | RV Institute of Technology</p>
+  <p>AI/ML Enthusiast | Python & Java Developer</p>
+  <br>
+  <a href="#projects" class="btn">View My Work</a>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p style="text-align:center; line-height:1.8; font-size:17px;">
+    Nenu <b>Bhavya Venkata Krishna Kumari Kommuri</b>, RV Institute of Technology lo B.Tech 4th year CSE (AIML) chaduvutunnanu.
+    Naku Artificial Intelligence, Machine Learning ante chala interest. Face Detection, Regional Languages meeda projects chesanu.
+    Naa goal oka manchi AI Engineer avvalani.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="grid">
+    <div class="card"><h3>Programming</h3><br><span class="tag">Python</span><span class="tag">Java</span><span class="tag">C</span></div>
+    <div class="card"><h3>AI / ML</h3><br><span class="tag">Machine Learning</span><span class="tag">Deep Learning</span><span class="tag">OpenCV</span><span class="tag">TensorFlow</span></div>
+    <div class="card"><h3>Web & Tools</h3><br><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">MySQL</span><span class="tag">Git</span></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Face Detection System</h3><br>
+      <p>OpenCV & Python tho real-time lo faces ni detect chese system. CCTV footage lo kuda work avuthundi.</p><br>
+      <p><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">AI</span></p><br>
+      <a href="https://github.com/" target="_blank">View Code on GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Handwritten Character Recognition</h3><br>
+      <p>Indian Regional Languages (Telugu, Hindi) lo chethi rathalni gurtinche AI model. CNN model use chesanu.</p><br>
+      <p><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Deep Learning</span></p><br>
+      <a href="https://github.com/" target="_blank">View Code on GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Personal Portfolio Website</h3><br>
+      <p>Naa skills, projects ni showcase cheyadaniki nene build chesina ee portfolio website.</p><br>
+      <p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></p><br>
+      <a href="#" target="_blank">Live Demo</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact Me</h2>
+  <form onsubmit="sendMsg(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<div class="footer">
+  2026 Bhavya Venkata Krishna Kumari Kommuri | Built with love | RV Institute of Technology
+</div>
+
+<script>
+function sendMsg(e){
+  e.preventDefault();
+  alert("Thank you for contacting me! I will reply soon - Bhavya");
+  e.target.reset();
+}
+</script>
+
+</body>
+</html>
